@@ -42,6 +42,10 @@ def get_parser():
             '--opt_model_size', 
             default='125m', type=str, 
             action='store')
+    parser.add_argument(
+            '--batch_size', 
+            default=128, type=int, 
+            action='store')    
     return parser
 
 
